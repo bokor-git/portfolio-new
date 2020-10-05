@@ -6,11 +6,10 @@ const Main = () => {
     return <div className={style.main}>
         <div className={styleContainer.container}>
             <div className={style.text}>
-                <p className={style.top}>Hi There!</p>
-                <h1>I am<br/> Bohdan Korol</h1>
-                <p className={style.bottom}>Front-End Developer</p>
+                <p className={style.top}>Hello, I'm <span className={style.highlight}>Bohdan Korol </span>. <br/>
+                 I'm a front-end web developer.</p>
             </div>
-            <div className={style.photo}> </div>
+            <div className={style.button}>View my work </div>
         </div>
     </div>
 }

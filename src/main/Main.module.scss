@@ -6,31 +6,31 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 .main {
+  text-align: center;
   min-height: 100vh;
   background-color: $mainBlockColor;
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 360px;
 
-  .text h1 {
-    @include text($mainTitleFont, 4rem, 900, transparent);
-    margin-left: 10%;
-    font-style: italic;
-    @include gradient(text);
+  .highlight {
+    @include text($textFont2, 30pt, 600, #E31B6D);
   }
 
-  .photo {
-    width: 300px;
-    height: 400px;
-    background-image: $backgroundImgGradient;
-  }
 
   .text p {
-    @include text($textFont, 1.5rem, 100, $textColor);
+    @include text($textFont2, 30pt, 400, #fff);
   }
 
-  .bottom {
-    margin-left: 40%;
+  .button {
+    @include text($textFont2, 1.2rem, 400, #fff);
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 0.5s;
   }
 }
 
