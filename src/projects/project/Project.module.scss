@@ -1,0 +1,71 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+
+.project {
+  margin: 10px;
+  min-width: 300px;
+  width: 40%;
+  @include flex(column, start, center);
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+
+  .projectPhoto {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    @include flex(row, center, center);
+    height: 300px;
+    background-size: cover;
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    .projectPhoto {
+      margin-top: 5px;
+      min-width: 100%;
+      width: 40%;
+      display: flex;
+      @include flex(column, default, center);
+      height: 200px;
+      background-color: #eeeeee;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+
+  .projectDescription {
+    background-color: #eeeeee;
+    color: #6f6f6f;;
+    width: 100%;
+    @include flex(column, space-around, center);
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    .projectTitle {
+      @include text($textFont, 1.5rem, 700, #2f323a);
+      margin: 10px;
+      position: relative;
+
+    }
+
+    .description {
+      @include text($textFont, 1rem, 400, $textColor);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

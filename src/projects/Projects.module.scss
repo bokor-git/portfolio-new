@@ -1,0 +1,42 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.projectsBlock {
+  min-height: fit-content;
+  background-color: $projectsBlockColor;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 100%;
+  min-width: 360px;
+
+  .projectContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    .title {
+      @include text($textFont, 2rem, 600, #2f323a);
+      width: 100%;
+      @include flex(row, center, default);
+      justify-items: center;
+    }
+
+    .projectBlock {
+      max-height: 50%;
+      width: 100%;
+      @include flex(row, space-around, center);
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+
+
+
+
+

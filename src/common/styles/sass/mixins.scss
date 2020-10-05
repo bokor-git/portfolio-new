@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin text($fontFamily, $fontSize,$fontWeight,$color) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}
+
+@mixin gradient($backgroundClip) {
+  background-image: $backgroundImgGradient;
+  -webkit-background-clip: $backgroundClip;
+  -webkit-content-fill-color: transparent;
+}
+
+@mixin flex($flexDirection,$justifyContent,$alignItems) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}

@@ -1,0 +1,15 @@
+@import "../../common/styles/sass/variables";
+
+
+.icon {
+    background-color: transparent;
+}
+
+.icon img {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: $backgroundImgGradient;
+    -webkit-background-clip: content;
+    -webkit-text-fill-color: transparent;
+}
