@@ -1,8 +1,9 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 .header {
-    height: 90px;
-    @include flex(row, flex-end, center);
-    background-color: $mainBlockColor;
+    height: 50px;
+    @include flex(row, center, center);
     min-width: 360px;
+    background: #1B242F;
+    border-bottom: 3px solid #04c2c9;
 }

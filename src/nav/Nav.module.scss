@@ -1,13 +1,19 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 .nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 10%;
+    @include flex(row, flex-start, flex-start);
+    width: 100%;
+    background: none;
+    height: initial;
+    overflow: visible;
+    position: initial;
+    text-align: left;
+    flex-wrap: wrap;
 }
 
 .nav a {
-    @include text($textFont, 1rem, 100, $textColor);
+    margin-left: 20px;
+    margin-right: 20px;
+    @include text($textFont2, 1rem, 100, #fff);
     text-decoration: none;
 }
