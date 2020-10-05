@@ -17,3 +17,10 @@
     @include text($textFont2, 1rem, 100, #fff);
     text-decoration: none;
 }
+
+.nav a:hover {
+    margin-left: 20px;
+    margin-right: 20px;
+    @include text($textFont2, 1rem, 100, #E31B6D);
+    text-decoration: none;
+}
