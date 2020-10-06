@@ -1,15 +1,16 @@
 import React from 'react';
 import style from "./Contacts.module.scss"
 import styleContainer from "../common/styles/Container.module.css"
-import {Line} from "../common/components/Line";
+import {LineWhite} from "../common/components/LineWhite";
 import {Formik} from "formik";
 
 
 const Contacts = () => {
     return <div className={style.contactsBlock}>
         <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-            <h2 className={style.title}>Contacts</h2>
-            <Line/>
+            <h2 className={style.title}>CONTACT</h2>
+            <LineWhite/>
+            <div className={style.question}>Have a question or want to work together?</div>
             <div className={style.inputBlock}>
                 <Formik
                     initialValues={{name: '', email: '', text: ""}}

@@ -30,11 +30,13 @@
         justify-content: center;
         flex-wrap: wrap;
         .item {
+          background-color: transparent;
           cursor: pointer;
           line-height: 2;
           @include text($textFont2, 1.2rem, 600, #616161);
           margin: 0 15px;
           padding: 10px 30px;
+          transition: all 0.5s;
         }
         .itemActive {
           background-color: #E31B6D;

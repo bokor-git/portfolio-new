@@ -12,7 +12,7 @@ const Skills = () => {
     return <div className={style.skillsBlock}>
         <div className={`${styleContainer.container} ${style.skillsContainer}`}>
             <h2 className={style.title}>ABOUT</h2>
-            <Line/>
+            <Line />
             <div className={style.skills}>
                 <Skill title="HTML" description={description}
                        icon={"https://pngimage.net/wp-content/uploads/2018/06/html-icon-png-6.png"}/>
