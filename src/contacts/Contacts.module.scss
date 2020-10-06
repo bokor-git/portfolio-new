@@ -1,6 +1,7 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 .contactsBlock {
+    padding-top: 50px;
     height: 75vh;
     background-color: $contactsBlockColor;
     @include flex(row,center,default);

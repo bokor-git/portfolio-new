@@ -2,8 +2,9 @@
 @import "../common/styles/sass/mixins";
 
 .projectsBlock {
+  padding-top: 50px;
   min-height: fit-content;
-  background-color: $projectsBlockColor;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -18,8 +19,36 @@
     margin-bottom: 30px;
     margin-top: 30px;
 
+    .filter {
+      position: relative;
+      white-space: nowrap;
+
+      .flex {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        .item {
+          cursor: pointer;
+          line-height: 2;
+          @include text($textFont2, 1.2rem, 600, #616161);
+          margin: 0 15px;
+          padding: 10px 30px;
+          transition: background-color 0.5s;
+        }
+        .itemActive {
+          background-color: #E31B6D;
+          @include text($textFont2, 1.2rem, 600, #FFF);
+          transition: background-color 0.5s;
+          margin: 0 15px;
+          padding: 5px 30px;
+        }
+      }
+    }
+
     .title {
-      @include text($textFont, 2rem, 600, #2f323a);
+      @include text($textFont2, 2.5rem, 600, #45474A);
       width: 100%;
       @include flex(row, center, default);
       justify-items: center;

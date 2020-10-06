@@ -7,10 +7,6 @@ import messengerImg from "./../common/img/messenger.png"
 import todolistImg from "./../common/img/todolist.png"
 import counterImg from "./../common/img/counter.png"
 import {Line} from "../common/components/Line";
-import facebookIcon from "../common/icons/facebook.png"
-import instagramIcon from "../common/icons/instagram.png"
-import linkindlIcon from "../common/icons/linkindl.png"
-import viberIcon from "../common/icons/viber.png"
 
 
 const socialNetwork = {
@@ -42,8 +38,16 @@ const counter = {
 const Projects = () => {
     return <div className={style.projectsBlock}>
         <div className={`${styleContainer.container} ${style.projectContainer}`}>
-            <h2 className={style.title}>Projects</h2>
+            <h2 className={style.title}>PROJECTS</h2>
             <Line/>
+            <div className={style.filter}>
+                <div className={style.flex}>
+                    <div className={style.itemActive}>ALL</div>
+                    <div className={style.item}>REACT-JS</div>
+                    <div className={style.item}>JAVASCRIPT</div>
+                    <div className={style.item}>VUE-JS</div>
+                </div>
+            </div>
             <div className={style.projectBlock}>
                 <Project name={socialNetwork.name} description={socialNetwork.description} img={socialImg}/>
                 <Project name={todoList.name} description={todoList.description} img={todolistImg}/>
