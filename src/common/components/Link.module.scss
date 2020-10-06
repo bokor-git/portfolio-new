@@ -1,18 +1,20 @@
 @import "../../common/styles/sass/variables";
-
-.link {
+@import "../../common/styles/sass/mixins";
+.link {bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #e31b6d;
+  background-color: white;
+  font-size: 13pt;
+  margin: 0 auto;
+  padding: 7px 0;
+  width: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  font-family: $textFont;
+  @include text($textFont2, 1.2rem, 400, #1b242f);
   cursor: pointer;
-  width: 163px;
-  height: 44px;
-  color: #f5f5f5;
   text-decoration: none;
-  background-color: $secondaryGradientColor;
-  font-weight: 700;
   position: relative;
   z-index: 2;
 }

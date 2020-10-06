@@ -11,28 +11,28 @@ import {Line} from "../common/components/Line";
 
 const socialNetwork = {
     name: "Social network",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae sed totam ullam! Debitis earum re",
+    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae",
     img: socialImg
 }
 
 const todoList = {
     name: "Todolist",
     img: todolistImg,
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae sed totam ullam! Debitis earum re"
+    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
 }
 
 
 const messenger = {
     name: "Messenger",
     img: messengerImg,
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae sed totam ullam! Debitis earum re"
+    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
 }
 
 
 const counter = {
     name: "Counter",
     img: counterImg,
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae sed totam ullam! Debitis earum re"
+    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
 }
 
 const Projects = () => {

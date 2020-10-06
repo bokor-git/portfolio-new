@@ -12,7 +12,7 @@ type ProjectPropsType = {
 const Project = (props: ProjectPropsType) => {
     return <div className={`${styleContainer.container} ${style.project}`}>
         <div className={style.projectPhoto} style={{backgroundImage: `url(${props.img})`}}>
-            <CheckLink text={"Check Project"}/>
+            <CheckLink text={"LEARN MORE"}/>
         </div>
 
         <div className={style.projectDescription}>
@@ -20,8 +20,6 @@ const Project = (props: ProjectPropsType) => {
             <p className={style.description}>{props.description}</p>
         </div>
     </div>
-
-
 };
 
 export default Project
