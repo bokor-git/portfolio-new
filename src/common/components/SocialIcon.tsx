@@ -2,8 +2,11 @@ import style from "./SocialIcon.module.scss";
 import React from "react";
 
 
-export function SocialIcon(props: { icon: string }) {
+export function SocialIcon() {
     return <div className={style.icon}>
-        <img src={props.icon}/>
+        <div className={style.flex}>
+
+        </div>
+
     </div>
 }

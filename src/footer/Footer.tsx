@@ -22,16 +22,13 @@ const icons = {
 const Footer = () => {
     return <div className={style.footerBlock}>
         <div className={`${styleContainer.container} ${style.footerContainer}`}>
-            <h2 className={style.title}>Bohdan Korol</h2>
-            <Line/>
             <div className={style.socialMediaBlock}>
-                <SocialIcon icon={icons.facebook}/>
-                <SocialIcon icon={icons.instagram}/>
-                <SocialIcon icon={icons.linkedin}/>
-                <SocialIcon icon={icons.telegram}/>
-                <SocialIcon icon={icons.viber}/>
+                <SocialIcon/>
+                <SocialIcon/>
+                <SocialIcon/>
+                <SocialIcon/>
             </div>
-            <p className={style.text}>©2020 All rights reserved</p>
+            <p className={style.text}>BOHDAN KOROL <span>©2020</span> </p>
         </div>
     </div>
 }

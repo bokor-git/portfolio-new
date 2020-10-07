@@ -1,15 +1,27 @@
 @import "../../common/styles/sass/variables";
-
+@import "../../common/styles/sass/mixins";
 
 .icon {
     background-color: transparent;
-}
 
-.icon img {
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    background-image: $backgroundImgGradient;
-    -webkit-background-clip: content;
-    -webkit-text-fill-color: transparent;
+    .flex{
+        background-color: #262F38;
+        cursor: pointer;
+        font-size: 18pt;
+        height: 55px;
+        margin: 0 15px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 55px;
+        transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+        @include flex(row, center, center);
+        &:hover{
+            background-color: #04c2c9;
+        }
+        img {
+            width: 33%;
+            background-color: white;
+        }
+    }
 }

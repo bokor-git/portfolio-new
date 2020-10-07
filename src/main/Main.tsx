@@ -9,7 +9,7 @@ const Main = () => {
                 <p className={style.top}>Hello, I'm <span className={style.highlight}>Bohdan Korol</span>. <br/>
                  I'm a front-end web developer.</p>
             </div>
-            <div className={style.button}>View my work </div>
+            <div className={style.button}>View my work <span className={style.arrow}></span> </div>
         </div>
     </div>
 }

@@ -30,7 +30,41 @@
     cursor: pointer;
     display: inline-block;
     padding: 10px 20px;
-    transition: all 0.5s;
+    transition: all 0.2s;
+
+    &:hover {
+      border: 2px solid #04C2C9;
+      background-color: #04C2C9;
+    }
+
+    &:hover .arrow {
+      transform: rotate(135deg);
+
+    }
+
+    .arrow {
+      margin-left: 10px;
+      display: inline-block;
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+      width: 10px;
+      height: 10px;
+      transition: all 0.5s;
+      transform: rotate(45deg);
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        background-color: white;
+
+        bottom: 4px;
+        right: -3px;
+        transform: rotate(135deg);
+      }
+    }
   }
 }
 
