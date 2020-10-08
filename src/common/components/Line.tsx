@@ -3,6 +3,10 @@ import React from "react";
 
 
 export function Line() {
-    return    <div className={style.line}></div>
+
+    return <div className={style.container}>
+        <div className={style.line}></div>
+    </div>
+
 
 }

@@ -1,5 +1,11 @@
 @import "../../common/styles/sass/variables";
 
+.container {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .line {
   background: #45474A;
   width: 80px;

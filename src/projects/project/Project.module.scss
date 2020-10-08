@@ -5,7 +5,6 @@
 .project {
   margin: 10px;
   min-width: 300px;
-  width: 40%;
   @include flex(column, start, center);
   height: 100%;
   border-radius: 20px;

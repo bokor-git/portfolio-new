@@ -37,6 +37,12 @@
           margin: 0 15px;
           padding: 10px 30px;
           transition: all 0.5s;
+          &:active {
+            background-color: #E31B6D;
+            @include text($textFont2, 1.2rem, 600, #FFF);
+            margin: 0 15px;
+            padding: 5px 30px;
+          }
         }
         .itemActive {
           background-color: #E31B6D;
