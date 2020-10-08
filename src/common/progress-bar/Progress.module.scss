@@ -1,0 +1,52 @@
+@import "../../common/styles/sass/mixins";
+.bar {
+  align-items: flex-end;
+  background-color: #eee;
+  color: #666;
+  font-size: 7pt;
+  height: 25px;
+  margin: 0 0 12px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1.5s ease 0.5s;
+  .span {
+    @include text($textFont2, 0.8rem, 600, #666);
+    padding: 0 5px 0 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    transition: 1.5s ease 0.5s;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #00a1a7;
+    opacity: 0;
+    padding: 0;
+    color: #666;
+    margin: 0 0 12px 0;
+
+    .tag {
+      left: 0;
+      position: absolute;
+      top: 0;
+      background-color: #04c2c9;
+      color: #fff;
+      height: 100%;
+      width: 110px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include text($textFont2, 0.8rem, 600, #fff);
+    }
+  }
+}

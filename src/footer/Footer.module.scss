@@ -2,13 +2,55 @@
 @import "../common/styles/sass/mixins";
 
 .footerBlock {
+  position: relative;
   height: fit-content;
   background-color: #1b242f;
   @include flex(center, center, center);
   min-width: 360px;
+  .start_btn {
+    background: #e31b6d;
+    cursor: pointer;
+    font-size: 30pt;
+    height: 50px;
+    left: 0;
+    line-height: 40pt;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -25px;
+    transition: background 0.5s;
+    width: 47px;
+    &:hover {
+      background-color: #FB1F79;
+    }
+    &:before{
+      position: absolute;
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-left: solid white 4px;
+      border-bottom: solid white 4px;
+      transform: rotate(135deg);
+      left: 15px;
+      bottom: 18px;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-left: solid white 4px;
+      border-bottom: solid white 4px;
+      transform: rotate(135deg);
+      left: 15px;
+      bottom: 7px;
+    }
+  }
 
   .footerContainer {
-    height: 25vh;
+    height: 35vh;
     width: 100%;
     @include flex(column, space-around, center);
     flex-wrap: wrap;
@@ -37,6 +79,7 @@
       margin-top: 35px;
       opacity: 0.6;
     }
+
     .text span {
       @include text($textFont, 0.8rem, 400, #e31b6d);
     }

@@ -10,7 +10,7 @@ import {Line} from "../common/components/Line";
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 // @ts-ignore
-import Slide from 'react-reveal/Slide';
+import Zoom from 'react-reveal/Zoom';
 
 
 const socialNetwork = {
@@ -59,18 +59,18 @@ const Projects = () => {
                 </Fade>
             </div>
             <div className={style.projectBlock}>
-                <Fade distance={"50%"}  bottom>
+                <Zoom distance={"50%"}  >
                     <Project name={socialNetwork.name} description={socialNetwork.description} img={socialImg}/>
-                </Fade>
-                <Fade distance={"50%"} delay={250} bottom>
+                </Zoom>
+                <Zoom distance={"50%"} delay={250} >
                     <Project name={todoList.name} description={todoList.description} img={todolistImg}/>
-                </Fade>
-                <Fade distance={"30%"} delay={500} bottom>
+                </Zoom>
+                <Zoom distance={"30%"} delay={500} >
                     <Project name={messenger.name} description={messenger.description} img={messengerImg}/>
-                </Fade>
-                <Fade distance={"30%"} delay={750} bottom>
+                </Zoom>
+                <Zoom distance={"30%"} delay={750} >
                     <Project name={counter.name} description={counter.description} img={counterImg}/>
-                </Fade>
+                </Zoom>
             </div>
 
         </div>

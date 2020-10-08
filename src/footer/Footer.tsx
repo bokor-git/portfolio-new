@@ -22,6 +22,8 @@ const icons = {
 const Footer = () => {
     return <div className={style.footerBlock}>
         <div className={`${styleContainer.container} ${style.footerContainer}`}>
+            <div className={style.start_btn}>
+            </div>
             <div className={style.socialMediaBlock}>
                 <SocialIcon/>
                 <SocialIcon/>

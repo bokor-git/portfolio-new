@@ -17,5 +17,10 @@
   text-decoration: none;
   position: relative;
   z-index: 2;
+  transition: all 0.5s;
+  &:hover {
+    background-color: #e31b6d;
+    @include text($textFont2, 1.2rem, 400, #FFF);
+  }
 }
 

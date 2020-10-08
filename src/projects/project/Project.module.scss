@@ -3,54 +3,90 @@
 
 
 .project {
-  margin: 10px;
   min-width: 300px;
-  @include flex(column, start, center);
+  @include flex(column, center, center);
   height: 100%;
   border-radius: 20px;
   position: relative;
+  transition: all 0.5s;
 
+  &:hover .projectPhoto {
+    .hover_container {
+      display: block;
+    }
+
+    img {
+      opacity: 0;
+    }
+  }
+
+}
+
+
+.projectPhoto {
+  position: relative;
+  @include flex(row, center, center);
+  height: 300px;
+  width: 390px;
+
+  .hover_container {
+    transition: all 0.5s;
+    display: none;
+
+    .projectDescription {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      @include flex(column, space-around, center);
+      text-align: center;
+
+      .projectTitle {
+        @include text($textFont2, 1.5rem, 600, #1b242f);
+        margin: 0;
+        text-align: center;
+
+      }
+
+      .description {
+        @include text($textFont2, 0.9rem, 400, #e31b6d);
+        margin: 0;
+        text-align: center;
+      }
+    }
+
+    .link_container {
+      position: absolute;
+      bottom: 20%;
+      left: 27%;
+
+    }
+  }
+
+
+  img {
+    transition: all 0.5s;
+    width: 390px;
+    max-height: 300px;
+    min-height: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .projectPhoto {
-    width: 100%;
-    @include flex(row, center, center);
-    height: 300px;
-    background-size: cover;
-    transition: all 0.3s ease-in-out;;
-
-  }
-
-  @media screen and (max-width: 1200px) {
-    .projectPhoto {
-      margin-top: 5px;
-      min-width: 100%;
-      width: 40%;
-      display: flex;
-      @include flex(column, default, center);
+    margin-top: 5px;
+    min-width: 100%;
+    display: flex;
+    @include flex(column, default, center);
+    img {
+      width: 360px;
       height: 200px;
-      background-color: #eeeeee;
-    }
-  }
-
-  .projectDescription {
-    background-color: #eeeeee;
-    color: #6f6f6f;;
-    width: 100%;
-    @include flex(column, space-around, center);
-    text-align: center;
-
-    .projectTitle {
-      @include text($textFont2, 1.2rem, 600, #1b242f);
-      margin: 5px;
-      position: relative;
-
-    }
-
-    .description {
-      @include text($textFont2, 0.9rem, 400, #616161);
-      margin: 5px;
     }
   }
 }
+
+
+
 
 
 
