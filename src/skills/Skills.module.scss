@@ -2,7 +2,6 @@
 @import "../common/styles/sass/mixins";
 
 .skillsBlock {
-  padding-top: 50px;
   min-height: fit-content;
   background-color: #FFFFFF;
   display: flex;
@@ -10,6 +9,7 @@
   min-width: 360px;
 
   .skillsContainer {
+    padding-top: 50px;
     line-height: 1.2rem;
     flex-direction: column;
     justify-content: flex-start;

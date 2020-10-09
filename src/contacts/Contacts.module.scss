@@ -2,23 +2,20 @@
 @import "../common/styles/sass/mixins";
 
 .contactsBlock {
-  padding-top: 50px;
   height: 75vh;
   background-color: #252934;
   @include flex(row, center, default);
   min-width: 360px;
-
   .contactsContainer {
+    padding-top: 50px;
     margin-top: 30px;
     @include flex(column, space-around, center);
     flex-wrap: initial;
     max-height: fit-content;
-
     .question {
       @include text($textFont2, 1rem, 600, #04c2c9);
       margin: 20px 0 20px 0;
     }
-
     .title {
       margin: 0;
       width: 100%;

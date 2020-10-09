@@ -1,27 +1,32 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
+
 .nav {
     @include flex(row, flex-start, flex-start);
     width: 100%;
     background: none;
     height: initial;
     overflow: visible;
-    text-align: left;
+    text-align: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 
 
-}
-
-.nav a {
-    margin-left: 20px;
-    margin-right: 20px;
     @include text($textFont2, 1rem, 100, #fff);
     text-decoration: none;
-}
 
-.nav a:hover {
-    margin-left: 20px;
-    margin-right: 20px;
-    @include text($textFont2, 1rem, 100, #E31B6D);
-    text-decoration: none;
+    :hover {
+
+        @include text($textFont2, 1rem, 100, #E31B6D);
+        text-decoration: none;
+    }
+
+    & .active  {
+        @include text($textFont2, 1rem, 100, #E31B6D);
+        text-decoration: none;
+    }
+    span {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

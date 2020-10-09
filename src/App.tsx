@@ -7,15 +7,24 @@ import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
+import {Element} from "react-scroll";
 
 function App() {
     return (
         <div className="App">
-            <Main/>
+            <Element name="home">
+                <Main/>
+            </Element>
             <Header/>
-            <Skills/>
-            <Projects/>
-            <Contacts/>
+            <Element name="about">
+                <Skills/>
+            </Element>
+            <Element name="projects">
+                <Projects/>
+            </Element>
+            <Element name="contact">
+                <Contacts/>
+            </Element>
             <Footer/>
         </div>
     );
