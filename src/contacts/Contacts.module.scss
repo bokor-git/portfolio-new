@@ -24,14 +24,14 @@
     }
 
     .inputBlock {
-      min-width: 288px;
+      min-width: 360px;
       width: 50%;
       height: 60%;
       margin-bottom: 40px;
       @include flex(column, space-between, center);
 
       .formBlock {
-        min-width: 288px;
+        min-width: 360px;
         height: 70%;
         width: 90%;
         @include flex(column, space-between, center);

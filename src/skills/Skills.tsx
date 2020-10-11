@@ -9,6 +9,8 @@ import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import {ProgressNew} from "../common/progress-bar/Progress";
 import {Element} from "react-scroll";
+import photo from "../common/img/me.png"
+
 
 const description = "Fast load times and lag free interaction, my highest priority."
 
@@ -51,7 +53,7 @@ const Skills = () => {
                 <div className={style.about}>
                     <Fade fraction={0.9} distance={"30%"} left>
                         <div className={style.profile}>
-                            <img src="http://findmatthew.com/img/me.png" alt="profile photo" className={style.photo}/>
+                            <img src={photo} alt="profile photo" className={style.photo}/>
                             <div className={style.title}>Who's this guy?</div>
                             <div className={style.description}>
                                 <div>I'm a Front-End Developer from Ukraine <br/>

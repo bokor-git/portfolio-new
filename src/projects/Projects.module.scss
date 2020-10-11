@@ -2,7 +2,6 @@
 @import "../common/styles/sass/mixins";
 
 .projectsBlock {
-
   min-height: fit-content;
   background-color: #f5f5f5;
   display: flex;
@@ -13,6 +12,7 @@
 
   .projectContainer {
     padding-top: 50px;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -62,8 +62,9 @@
     }
 
     .projectBlock {
+      min-width: 360px;
       max-height: 50%;
-      width: 100%;
+      width: 80%;
       @include flex(row, center, center);
       flex-wrap: wrap;
     }

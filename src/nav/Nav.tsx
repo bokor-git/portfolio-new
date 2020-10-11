@@ -14,7 +14,7 @@ const Nav = () => {
         <Link spy={true}   activeClass={style.active} to={"projects"} duration={1000} smooth={true}>
             <span>PROJECTS</span>
         </Link>
-        <Link spy={true} offset={10} activeClass={style.active} to={"contact"} duration={1000} smooth={true}>
+        <Link spy={true} offset={15} activeClass={style.active} to={"contact"} duration={1000} smooth={true}>
           <span>CONTACT</span>
         </Link>
     </div>
