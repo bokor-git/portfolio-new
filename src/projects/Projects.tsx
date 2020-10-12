@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import style from "./Projects.module.scss"
 import styleContainer from "../common/styles/Container.module.css"
 import Project from "./project/Project";
@@ -11,35 +11,26 @@ import {Line} from "../common/components/Line";
 import Fade from 'react-reveal/Fade';
 // @ts-ignore
 import Zoom from 'react-reveal/Zoom';
+import {ProjectType} from "../App";
 
 
-const socialNetwork = {
-    name: "Social network",
-    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae",
-    img: socialImg
-}
+const Projects = ({projects}: { projects: Array<ProjectType> }) => {
 
-const todoList = {
-    name: "Todolist",
-    img: todolistImg,
-    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
-}
+    const [allProjects, setAllProjects] = useState<Array<ProjectType>>(projects)
+    const [filteredProjects, setFilteredProjects] = useState<Array<ProjectType>>(allProjects)
 
-
-const messenger = {
-    name: "Messenger",
-    img: messengerImg,
-    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
-}
+    const showNone = () => setFilteredProjects([])
+    const showAll = () => {
+        setFilteredProjects(allProjects)
+    }
+    const showReact = () => {
+        setFilteredProjects(allProjects.filter(p => p.type == "React"))
+    }
+    const showJS = () => {
+        setFilteredProjects(allProjects.filter(p => p.type == "JS"))
+    }
 
 
-const counter = {
-    name: "Counter",
-    img: counterImg,
-    description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
-}
-
-const Projects = () => {
     return <div className={style.projectsBlock}>
         <div className={`${styleContainer.container} ${style.projectContainer}`}>
             <Fade delay={500} duration={1000} distance={"30%"} right>
@@ -50,33 +41,36 @@ const Projects = () => {
             </Fade>
             <div className={style.filter}>
                 <Fade delay={500} duration={2000}>
-                    <div className={style.flex}>
-                        <div className={style.itemActive}>ALL</div>
-                        <div className={style.item}>REACT-JS</div>
-                        <div className={style.item}>JAVASCRIPT</div>
-                        <div className={style.item}>VUE-JS</div>
-                    </div>
+                    <ul className={style.flex}>
+                        <li onClick={async () => {
+                            await showNone();
+                            await showAll()
+                        }} className={style.item}>ALL
+                        </li>
+                        <li onClick={async () => {
+                            await showNone();
+                            await showReact()
+
+                        }} className={style.item}>REACT-JS
+                        </li>
+                        <li onClick={async () => {
+                            await showNone();
+                            await showJS()
+                        }} className={style.item}>JAVASCRIPT
+                        </li>
+                    </ul>
                 </Fade>
             </div>
             <div className={style.projectBlock}>
-                <Zoom distance={"50%"}  >
-                    <Project name={socialNetwork.name} description={socialNetwork.description} img={socialImg}/>
-                </Zoom>
-                <Zoom distance={"50%"} delay={250} >
-                    <Project name={todoList.name} description={todoList.description} img={todolistImg}/>
-                </Zoom>
-                <Zoom distance={"30%"} delay={500} >
-                    <Project name={messenger.name} description={messenger.description} img={messengerImg}/>
-                </Zoom>
-                <Zoom distance={"30%"} delay={750} >
-                    <Project name={counter.name} description={counter.description} img={counterImg}/>
-                </Zoom>
+                {filteredProjects.map(p =>
+                    <Zoom distance={"50%"}>
+                        <Project key={p.img} name={p.name} description={p.description} img={p.img}/>
+                    </Zoom>
+                )}
             </div>
 
         </div>
     </div>
-
-
 }
 
 export default Projects

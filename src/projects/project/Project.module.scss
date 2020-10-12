@@ -3,13 +3,12 @@
 
 
 .project {
-  min-width: 300px;
+  min-width: 360px;
   @include flex(column, center, center);
   height: 100%;
   border-radius: 20px;
   position: relative;
-  transition: all 0.5s;
-
+  transition: all ease-in-out 0.5s;
   &:hover .projectPhoto {
     .hover_container {
       display: block;
@@ -74,6 +73,7 @@
 
 @media screen and (max-width: 400px) {
   .projectPhoto {
+    width: 100%;
     margin-top: 5px;
     min-width: 100%;
     display: flex;

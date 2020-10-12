@@ -23,27 +23,26 @@
     .filter {
       position: relative;
       white-space: nowrap;
+      width: 40%;
 
       .flex {
-        align-items: center;
+        list-style: none;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        align-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
+        transition: all 1s;
+        background-color: #E31B6D;
+        height: 30px;
+
         .item {
           background-color: transparent;
           cursor: pointer;
           line-height: 2;
           @include text($textFont2, 1.2rem, 600, #616161);
           margin: 0 15px;
-          padding: 10px 30px;
           transition: all 0.5s;
-          &:active {
-            background-color: #E31B6D;
-            @include text($textFont2, 1.2rem, 600, #FFF);
-            margin: 0 15px;
-            padding: 5px 30px;
-          }
         }
         .itemActive {
           background-color: #E31B6D;
@@ -67,6 +66,7 @@
       width: 80%;
       @include flex(row, center, center);
       flex-wrap: wrap;
+      transition: all 1s;
     }
   }
 }
