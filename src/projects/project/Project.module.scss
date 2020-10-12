@@ -8,12 +8,11 @@
   height: 100%;
   border-radius: 20px;
   position: relative;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.7s;
   &:hover .projectPhoto {
     .hover_container {
       display: block;
     }
-
     img {
       opacity: 0;
     }
