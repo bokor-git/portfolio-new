@@ -50,7 +50,7 @@
   }
 
   .footerContainer {
-    height: 35vh;
+    height: 25vh;
     width: 100%;
     @include flex(column, space-around, center);
     flex-wrap: wrap;

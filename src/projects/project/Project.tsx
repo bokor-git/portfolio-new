@@ -16,7 +16,6 @@ const Project = (props: ProjectPropsType) => {
     return <div className={`${styleContainer.container} ${style.project}`}>
         <div className={style.projectPhoto}>
             <img src={props.img} alt=""/>
-
             <div className={style.hover_container}>
                 <Fade duration={300} top>
                     <div className={style.projectDescription}>
@@ -31,8 +30,6 @@ const Project = (props: ProjectPropsType) => {
                 </Fade>
             </div>
         </div>
-
-
     </div>
 };
 

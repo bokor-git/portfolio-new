@@ -26,8 +26,16 @@ const Projects = ({projects}: { projects: Array<ProjectType> }) => {
     const [selector, setSelector] = useState<any>("#all")
 
     React.useEffect(() => {
-        setWidth(document.querySelector(selector).offsetWidth);
-        setLeft(document.querySelector(selector).offsetLeft);
+        setWidth(document.querySelector(selector).offsetWidth + 30);
+        setLeft(document.querySelector(selector).offsetLeft - 15)
+        // @ts-ignore
+        document.querySelector("#nav").querySelectorAll("li")[0].style.color = "#616161"
+        // @ts-ignore
+        document.querySelector("#nav").querySelectorAll("li")[1].style.color = "#616161"
+        // @ts-ignore
+        document.querySelector("#nav").querySelectorAll("li")[2].style.color = "#616161"
+        document.querySelector(selector).style.color = "white";
+
     }, [selector]);
 
     return <div className={style.projectsBlock}>
@@ -38,12 +46,12 @@ const Projects = ({projects}: { projects: Array<ProjectType> }) => {
             <Fade delay={1000} duration={1000} distance={"70%"} right>
                 <Line/>
             </Fade>
-            <div className={style.filter}>
-                <Fade left  delay={500} duration={1000}>
+            <div  className={style.filter}>
+                <Fade left delay={500} duration={1000}>
                     <div className={style.marker} style={{width: `${width}px`, left: `${left}px`}}></div>
                 </Fade>
                 <Fade delay={500} duration={2000}>
-                    <ul className={style.flex}>
+                    <ul id={"nav"} className={style.flex}>
                         <li id={"all"} onClick={async () => {
                             setSelector("#all")
                             await showNone();
@@ -67,7 +75,7 @@ const Projects = ({projects}: { projects: Array<ProjectType> }) => {
             </div>
             <div className={style.projectBlock}>
                 {filteredProjects.map(p =>
-                    <Zoom distance={"50%"}>
+                    <Zoom  distance={"50%"}>
                         <Project key={p.img} name={p.name} description={p.description} img={p.img}/>
                     </Zoom>
                 )}

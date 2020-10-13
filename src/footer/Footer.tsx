@@ -2,23 +2,18 @@ import React from 'react';
 import style from "./Footer.module.scss"
 import styleContainer from "../common/styles/Container.module.css"
 import {SocialIcon} from "../common/components/SocialIcon";
-import {Line} from "../common/components/Line";
-import facebookIcon from "../common/icons/facebook.png"
-import instagramIcon from "../common/icons/instagram.png"
-import linkindlIcon from "../common/icons/linkindl.png"
-import viberIcon from "../common/icons/viber.png"
-import telegram from "../common/icons/telegram.png"
-import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll'
+import {Link} from 'react-scroll'
+import linkedin from "../common/icons/linkedin-in-brands.svg"
+import facebook from "../common/icons/facebook-logo.svg"
+import telegram from "../common/icons/telegram.svg"
+import instagram from "../common/icons/instagram.svg"
 
-const icons = {
-    facebook: facebookIcon,
-    instagram: instagramIcon,
-    linkedin: linkindlIcon,
-    telegram: telegram,
-    viber: viberIcon
-}
-
-
+const info = [
+    {icon:linkedin, link:"https://uk-ua.facebook.com/bogdan.korol.750"},
+    {icon:facebook,link:"https://uk-ua.facebook.com/bogdan.korol.750"},
+    {icon:telegram,link:"https://t.me/bokor1"},
+    {icon:instagram,link:"https://www.instagram.com/bohdan.korol/"},
+]
 const Footer = () => {
     return <div className={style.footerBlock}>
         <div className={`${styleContainer.container} ${style.footerContainer}`}>
@@ -28,10 +23,8 @@ const Footer = () => {
 
 
             <div className={style.socialMediaBlock}>
-                <SocialIcon/>
-                <SocialIcon/>
-                <SocialIcon/>
-                <SocialIcon/>
+                {info.map(i=> <SocialIcon info={i}/>)}
+
             </div>
             <p className={style.text}>BOHDAN KOROL <span>©2020</span></p>
         </div>

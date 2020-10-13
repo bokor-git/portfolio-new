@@ -10,7 +10,6 @@ import Footer from "./footer/Footer";
 import {Element} from "react-scroll";
 import socialImg from "./common/img/social-network.png";
 import todolistImg from "./common/img/todolist.png";
-import messengerImg from "./common/img/messenger.png";
 import counterImg from "./common/img/counter.png";
 
 export type ProjectType = {
