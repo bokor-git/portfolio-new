@@ -9,11 +9,13 @@ import Fade from "react-reveal/Fade";
 import Pulse from 'react-reveal/Pulse';
 // @ts-ignore
 import Zoom from 'react-reveal/Zoom';
-
+import contact from  "../common/icons/contact.svg"
 
 const Contacts = () => {
     return <div className={style.contactsBlock}>
+
         <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+            <img src={contact} alt=""/>
             <Fade delay={500} duration={1000} distance={"30%"} left>
                 <h2 className={style.title}>CONTACT</h2>
             </Fade>
@@ -87,7 +89,9 @@ const Contacts = () => {
                     </Formik>
                 </div>
             </Zoom>
+
         </div>
+
     </div>
 
 
