@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   min-width: 360px;
-
   .skillsContainer {
     padding-top: 50px;
     line-height: 1.2rem;
@@ -16,7 +15,6 @@
     flex-wrap: initial;
     margin-bottom: 30px;
     margin-top: 30px;
-
     .title {
       width: 100%;
       display: flex;
@@ -24,7 +22,6 @@
       justify-content: center;
       justify-items: center;
     }
-
     .skills {
       width: 100%;
       display: flex;
@@ -33,7 +30,6 @@
       flex-wrap: wrap;
     }
   }
-
   .about {
     width: 100%;
     margin: 50px 0 0 0;
@@ -41,7 +37,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
     .profile {
       margin: 15px 0 15px 0;
       width: 35%;
@@ -50,33 +45,83 @@
       justify-content: center;
       align-items: center;
       min-width: 360px;
-
       .photo {
         width: 288px;
         height: 250px;
       }
-
       .title {
         @include text($textFont2, 1.5rem, 600, #45474A);
         margin: 15px 0 20px 0;
       }
-
       .description {
         @include text($textFont2, 0.9rem, 400, #616161);
       }
     }
-
     .info {
       width: 50%;
       min-width: 360px;
       margin: 15px 0 15px 0;
+    }
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .skillsBlock {
+    .skillsContainer {
+      .title {
+        width: 100%;
+        display: flex;
+        @include text($textFont2, 2.5rem, 600, #45474A);
+        justify-content: center;
+        justify-items: center;
+      }
+      .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+    }
+    .about {
+      width: 100%;
+      margin: 50px 0 0 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .profile {
+        margin: 15px 0 15px 0;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 360px;
+        .photo {
+          width: 288px;
+          height: 250px;
+        }
+        .title {
+          @include text($textFont2, 1.5rem, 600, #45474A);
+          margin: 15px 0 20px 0;
+        }
+        .description {
+          @include text($textFont2, 0.9rem, 400, #616161);
+        }
+      }
+      .info {
+        width: 50%;
+        min-width: 360px;
+        margin: 15px 0 15px 0;
+      }
     }
   }
 
 }
 
-
+@media only screen and (max-width: 640px) {
+}
 
 
 

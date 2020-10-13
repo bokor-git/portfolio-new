@@ -14,20 +14,51 @@
 
   @include text($textFont2, 1rem, 100, #fff);
   text-decoration: none;
-
   :hover {
     cursor: pointer;
     @include text($textFont2, 1rem, 100, #E31B6D);
     text-decoration: none;
   }
-
   & .active {
     @include text($textFont2, 1rem, 100, #E31B6D);
     text-decoration: none;
   }
-
   span {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    @include text($textFont2, 0.8rem, 100, #fff);
+    :hover {
+      cursor: pointer;
+      @include text($textFont2, 0.8rem, 100, #E31B6D);
+    }
+
+    & .active {
+      @include text($textFont2, 0.8rem, 100, #E31B6D);
+    }
+    span {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav {
+    @include flex(row, center, flex-start);
+    @include text($textFont2, 0.6rem, 100, #fff);
+    :hover {
+      cursor: pointer;
+      @include text($textFont2, 0.6rem, 100, #E31B6D);
+    }
+    & .active {
+      @include text($textFont2, 0.6rem, 100, #E31B6D);
+    }
+  }
+}
+

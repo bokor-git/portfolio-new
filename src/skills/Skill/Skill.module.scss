@@ -33,3 +33,71 @@
 
 
 
+@media only screen and (max-width: 768px) {
+  .skill {
+    width: 120px;
+    max-width: 200px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+    .icon img {
+      border-radius: 8px;
+      width: 80px;
+      height: 80px;
+      background-color: #05C2C9;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      @include text($textFont2,1.2rem,600,#616161);
+      word-wrap: break-word;
+    }
+
+    .description {
+      @include text($textFont2, 0.6rem, 400, #616161);
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 640px) {
+  .skill {
+    min-width: 15%;
+    max-width: 200px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+
+    .icon img {
+      border-radius: 8px;
+      width: 50px;
+      height: 50px;
+      background-color: #05C2C9;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      @include text($textFont2,1.4rem,600,#616161);
+      margin: 1.5rem 0;
+      line-height: 1.2;
+      word-wrap: break-word;
+    }
+
+    .description {
+
+      @include text($textFont2, 0.9rem, 400, #616161);
+    }
+  }
+
+
+}
+
+

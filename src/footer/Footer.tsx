@@ -18,13 +18,10 @@ const Footer = () => {
     return <div className={style.footerBlock}>
         <div className={`${styleContainer.container} ${style.footerContainer}`}>
             <Link to={"home"} duration={1500} smooth={true}>
-                <div className={style.start_btn}></div>
+                <div className={style.start_btn}/>
             </Link>
-
-
             <div className={style.socialMediaBlock}>
                 {info.map(i=> <SocialIcon info={i}/>)}
-
             </div>
             <p className={style.text}>BOHDAN KOROL <span>©2020</span></p>
         </div>
