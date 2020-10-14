@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48fd04a90126ebb7a63ddec2bcf9e5a8",
+    "revision": "513952f657afe76dbbf27c3910223dcf",
     "url": "/portfolio-new/index.html"
   },
   {
-    "revision": "8f7c407f78e5899a48a6",
-    "url": "/portfolio-new/static/css/main.540e9ac6.chunk.css"
+    "revision": "2078a507c8d397516da0",
+    "url": "/portfolio-new/static/css/main.78879448.chunk.css"
   },
   {
-    "revision": "283fe48e3ff84371364c",
-    "url": "/portfolio-new/static/js/2.9ce43348.chunk.js"
+    "revision": "a5a8dc2f3f4f12ea0c9c",
+    "url": "/portfolio-new/static/js/2.b72d2187.chunk.js"
   },
   {
     "revision": "77e7f328dacc981fca681ee4ae94d669",
-    "url": "/portfolio-new/static/js/2.9ce43348.chunk.js.LICENSE.txt"
+    "url": "/portfolio-new/static/js/2.b72d2187.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8f7c407f78e5899a48a6",
-    "url": "/portfolio-new/static/js/main.41745d8a.chunk.js"
+    "revision": "2078a507c8d397516da0",
+    "url": "/portfolio-new/static/js/main.efba537e.chunk.js"
   },
   {
     "revision": "e091338d7d49b6d250b8",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-new/static/media/arrow.1e8215b5.svg"
   },
   {
+    "revision": "2f3bcde14af587f22dfd679565cc75d5",
+    "url": "/portfolio-new/static/media/atom.2f3bcde1.svg"
+  },
+  {
     "revision": "917a3bbec55fc62bcf80eac34a495f97",
     "url": "/portfolio-new/static/media/contact.917a3bbe.svg"
   },
@@ -42,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1ce38dd27e72a9d3cd0d0225792e8103",
     "url": "/portfolio-new/static/media/facebook-logo.1ce38dd2.svg"
+  },
+  {
+    "revision": "b43d86c08538ea82834d37e78d638ed2",
+    "url": "/portfolio-new/static/media/gadget.b43d86c0.svg"
   },
   {
     "revision": "ae96299c3082fb25b28a87d78ce6b08b",
@@ -56,8 +64,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-new/static/media/me.ff5cf8f0.png"
   },
   {
+    "revision": "72dc296fbf61a9537fd035aff6998f2d",
+    "url": "/portfolio-new/static/media/paper.72dc296f.svg"
+  },
+  {
     "revision": "6deab98c113244322d9cd00d119917ed",
     "url": "/portfolio-new/static/media/social-network.6deab98c.png"
+  },
+  {
+    "revision": "1e6c58fda7bc7a1fd3772511cbac4d0b",
+    "url": "/portfolio-new/static/media/speed.1e6c58fd.svg"
   },
   {
     "revision": "662bdc23a8b82cd5089720e7aa6b1092",
