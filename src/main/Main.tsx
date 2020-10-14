@@ -1,7 +1,7 @@
 import React from 'react';
 import style from "./Main.module.scss"
 import styleContainer from "../common/styles/Container.module.css"
-import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll'
+import {Link} from 'react-scroll'
 import arrow from  "../common/icons/arrow.svg"
 
 

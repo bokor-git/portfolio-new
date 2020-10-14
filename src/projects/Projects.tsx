@@ -35,7 +35,6 @@ const Projects = ({projects}: { projects: Array<ProjectType> }) => {
         // @ts-ignore
         document.querySelector("#nav").querySelectorAll("li")[2].style.color = "#616161"
         document.querySelector(selector).style.color = "white";
-
     }, [selector]);
 
     return <div className={style.projectsBlock}>
@@ -58,7 +57,7 @@ const Projects = ({projects}: { projects: Array<ProjectType> }) => {
                             await showAll()
                         }} className={style.item}>ALL
                         </li>
-                        <li id={"react"} onClick={async () => {
+                        <li id={"react"} onClick={async() => {
                             setSelector("#react")
                             await showNone();
                             await showReact()
