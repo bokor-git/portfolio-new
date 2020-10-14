@@ -9,7 +9,7 @@ import telegram from "../common/icons/telegram.svg"
 import instagram from "../common/icons/instagram.svg"
 
 const info = [
-    {icon:linkedin, link:"https://uk-ua.facebook.com/bogdan.korol.750"},
+    {icon:linkedin, link:"linkedin.com/in/bohdan-korol-a0b31b1b9"},
     {icon:facebook,link:"https://uk-ua.facebook.com/bogdan.korol.750"},
     {icon:telegram,link:"https://t.me/bokor1"},
     {icon:instagram,link:"https://www.instagram.com/bohdan.korol/"},
