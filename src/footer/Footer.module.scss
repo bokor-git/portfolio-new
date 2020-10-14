@@ -7,6 +7,7 @@
   background-color: #1b242f;
   @include flex(center, center, center);
   min-width: 360px;
+
   .start_btn {
     background: #e31b6d;
     cursor: pointer;
@@ -20,10 +21,12 @@
     top: -25px;
     transition: background 0.5s;
     width: 47px;
+
     &:hover {
       background-color: #FB1F79;
     }
-    &:before{
+
+    &:before {
       position: absolute;
       content: "";
       display: block;
@@ -35,6 +38,7 @@
       left: 15px;
       bottom: 18px;
     }
+
     &:after {
       position: absolute;
       content: "";
@@ -86,4 +90,12 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .footerBlock {
+    .start_btn {
+      top: -35px;
+    }
+
+  }
+}
 

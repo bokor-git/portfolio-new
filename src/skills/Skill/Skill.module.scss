@@ -9,8 +9,6 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
-
-
   .icon img {
     border-radius: 8px;
     width: 100px;
@@ -18,14 +16,12 @@
     background-color: #05C2C9;
     margin-bottom: 20px;
   }
-
   .title {
     @include text($textFont2,1.4rem,600,#616161);
     margin: 1.5rem 0;
     line-height: 1.2;
     word-wrap: break-word;
   }
-
   .description {
     @include text($textFont2, 0.9rem, 400, #616161);
   }
@@ -41,9 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-
-
+    margin-bottom: 5px;
     .icon img {
       border-radius: 8px;
       width: 80px;
@@ -51,18 +45,15 @@
       background-color: #05C2C9;
       margin-bottom: 20px;
     }
-
     .title {
       @include text($textFont2,1.2rem,600,#616161);
       word-wrap: break-word;
+      margin: 5px
     }
-
     .description {
-      @include text($textFont2, 0.6rem, 400, #616161);
+      @include text($textFont2, 0.9rem, 400, #616161);
     }
   }
-
-
 }
 
 @media only screen and (max-width: 640px) {
@@ -73,9 +64,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
-
-
+    margin-bottom: 5px;
     .icon img {
       border-radius: 8px;
       width: 50px;
@@ -83,20 +72,16 @@
       background-color: #05C2C9;
       margin-bottom: 5px;
     }
-
     .title {
-      @include text($textFont2,1.4rem,600,#616161);
-      margin: 1.5rem 0;
+      @include text($textFont2,1rem,600,#616161);
+      margin: 5px;
       line-height: 1.2;
       word-wrap: break-word;
     }
-
     .description {
-
-      @include text($textFont2, 0.9rem, 400, #616161);
+      @include text($textFont2, 0.6rem, 400, #616161);
     }
   }
-
 
 }
 

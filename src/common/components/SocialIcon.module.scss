@@ -3,7 +3,6 @@
 
 .icon {
   background-color: transparent;
-
   .flex {
     background-color: #262F38;
     cursor: pointer;
@@ -59,5 +58,14 @@
   }
   100% {
     top: 20px
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .icon {
+    .flex {
+      height: 35px;
+      width: 35px;
+    }
   }
 }

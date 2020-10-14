@@ -31,33 +31,23 @@
 
 
 @media only screen and (max-width: 768px) {
-  .nav {
-    @include text($textFont2, 0.8rem, 100, #fff);
-    :hover {
-      cursor: pointer;
-      @include text($textFont2, 0.8rem, 100, #E31B6D);
-    }
 
-    & .active {
-      @include text($textFont2, 0.8rem, 100, #E31B6D);
-    }
-    span {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  }
 }
 
 @media only screen and (max-width: 640px) {
   .nav {
     @include flex(row, center, flex-start);
-    @include text($textFont2, 0.6rem, 100, #fff);
+    @include text($textFont2, 0.8rem, 100, #fff);
     :hover {
       cursor: pointer;
-      @include text($textFont2, 0.6rem, 100, #E31B6D);
+      @include text($textFont2, 0.8rem, 100, #E31B6D);
     }
     & .active {
-      @include text($textFont2, 0.6rem, 100, #E31B6D);
+      @include text($textFont2, 0.8rem, 100, #E31B6D);
+    }
+    span {
+      margin-left: 5px;
+      margin-right: 5px;
     }
   }
 }

@@ -44,7 +44,47 @@
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .main {
+    .highlight {
+      @include text($textFont2, 20pt, 600, #E31B6D);
+    }
+    .text p {
+      @include text($textFont2, 20pt, 400, #fff);
+    }
+    .button {
+      @include text($textFont2, 1rem, 400, #fff);
 
+      padding: 5px 10px;
+      transition: all 0.2s;
+      .arrow {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main {
+    .highlight {
+      @include text($textFont2, 15pt, 600, #E31B6D);
+    }
+    .text p {
+      @include text($textFont2, 15pt, 400, #fff);
+    }
+    .button {
+      @include text($textFont2, 0.8rem, 400, #fff);
+
+      padding: 5px 10px;
+      transition: all 0.2s;
+      .arrow {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
 
 
 
