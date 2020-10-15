@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b3948064c484e3bd8e1b74db67cfd8f",
+    "revision": "c0c55e62c3bc40fdfd08fc0eceaa1b92",
     "url": "/portfolio-new/index.html"
   },
   {
-    "revision": "7565d77a2af258a06ceb",
-    "url": "/portfolio-new/static/css/main.f24a4203.chunk.css"
+    "revision": "863df44c258c4ead0591",
+    "url": "/portfolio-new/static/css/main.eae16875.chunk.css"
   },
   {
-    "revision": "62b673e77b067a34b390",
-    "url": "/portfolio-new/static/js/2.f6df4140.chunk.js"
+    "revision": "f8b93d0d468fb59fee32",
+    "url": "/portfolio-new/static/js/2.b023d822.chunk.js"
   },
   {
     "revision": "77e7f328dacc981fca681ee4ae94d669",
-    "url": "/portfolio-new/static/js/2.f6df4140.chunk.js.LICENSE.txt"
+    "url": "/portfolio-new/static/js/2.b023d822.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7565d77a2af258a06ceb",
-    "url": "/portfolio-new/static/js/main.3872d4db.chunk.js"
+    "revision": "863df44c258c4ead0591",
+    "url": "/portfolio-new/static/js/main.d358f628.chunk.js"
   },
   {
     "revision": "e091338d7d49b6d250b8",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7ab0545026332137a8ac25a700a8a2b7",
     "url": "/portfolio-new/static/media/linkedin-in-brands.7ab05450.svg"
+  },
+  {
+    "revision": "17ee59c55d6b993b6622eb360522d13c",
+    "url": "/portfolio-new/static/media/me.17ee59c5.webp"
   },
   {
     "revision": "ff5cf8f0bdf73e70ac41a9aaae268554",
