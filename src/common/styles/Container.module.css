@@ -7,4 +7,5 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 100;
 }

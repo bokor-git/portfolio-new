@@ -26,6 +26,7 @@
   @include flex(row, center, center);
   height: 300px;
   width: 390px;
+  object-fit: cover;
 
   .hover_container {
     transition: all 0.5s;

@@ -6,14 +6,15 @@ import {SkillsType} from "../../App";
 
 
 
-const Skill = (props: SkillsType) => {
+const Skill = React.memo((props: SkillsType) => {
     return <Flip fraction={0.6} duration={1000} delay={props.delay} left>
         <div className={style.skill}>
+            {console.log("skill render")}
             <div className={style.icon}><img src={props.icon}/></div>
             <h4 className={style.title}>{props.title}</h4>
             <p className={style.description}>{props.description}</p>
         </div>
     </Flip>
-}
+})
 
 export default Skill

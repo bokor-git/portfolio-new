@@ -13,6 +13,7 @@ import contact from  "../common/icons/contact.svg"
 
 const Contacts = () => {
     return <div className={style.contactsBlock}>
+        {console.log(  "Contacts render")}
         <img src={contact} alt=""/>
         <div className={`${styleContainer.container} ${style.contactsContainer}`}>
             <Fade delay={500} duration={1000} distance={"30%"} left>

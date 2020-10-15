@@ -2,6 +2,7 @@
   font-family: "Gilroy";
   src: url("../../src/common/fonts/Gilroy-ExtraBold.otf")
 }
+
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 .main {
@@ -12,12 +13,22 @@
   justify-content: center;
   align-items: center;
   min-width: 360px;
+  position: relative;
+  z-index: 100;
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
   .highlight {
     @include text($textFont2, 30pt, 600, #E31B6D);
   }
+
   .text p {
     @include text($textFont2, 30pt, 400, #fff);
   }
+
   .button {
     @include text($textFont2, 1.2rem, 400, #fff);
     border: 2px solid #fff;
@@ -26,13 +37,16 @@
     display: inline-block;
     padding: 10px 20px;
     transition: all 0.2s;
+
     &:hover {
       border: 2px solid #04C2C9;
       background-color: #04C2C9;
     }
+
     &:hover .arrow {
       transform: rotate(90deg);
     }
+
     .arrow {
       margin-left: 10px;
       display: inline-block;
@@ -44,19 +58,23 @@
     }
   }
 }
+
 @media only screen and (max-width: 768px) {
   .main {
     .highlight {
       @include text($textFont2, 20pt, 600, #E31B6D);
     }
+
     .text p {
       @include text($textFont2, 20pt, 400, #fff);
     }
+
     .button {
       @include text($textFont2, 1rem, 400, #fff);
 
       padding: 5px 10px;
       transition: all 0.2s;
+
       .arrow {
         width: 10px;
         height: 10px;
@@ -70,14 +88,17 @@
     .highlight {
       @include text($textFont2, 15pt, 600, #E31B6D);
     }
+
     .text p {
       @include text($textFont2, 15pt, 400, #fff);
     }
+
     .button {
       @include text($textFont2, 0.8rem, 400, #fff);
 
       padding: 5px 10px;
       transition: all 0.2s;
+
       .arrow {
         width: 10px;
         height: 10px;

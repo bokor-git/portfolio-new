@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './App.css';
 import Header from "./header/Header";
 import Main from "./main/Main";
@@ -8,14 +7,14 @@ import Projects from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 import {Element} from "react-scroll";
-import socialImg from "./common/img/social-network.png";
-import todolistImg from "./common/img/todolist.png";
-import counterImg from "./common/img/counter.png";
+import network from "./common/img/network.png";
 
+import counterImg from "./common/img/counter.png";
 import speed from "../src/common/icons/speed.svg"
 import gadget from "../src/common/icons/gadget.svg"
 import paper from "../src/common/icons/paper.svg"
 import atom from "../src/common/icons/atom.svg"
+
 
 export type ProjectType = {
     type: string
@@ -35,47 +34,36 @@ export type TechnologiesType = {
 }
 
 function App() {
+
     const projects: Array<ProjectType> = [
         {
             type: "React",
-            name: "Social network",
-            description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae",
-            img: socialImg,
-        },
-        {
-            type: "JS",
-            name: "Todolist",
-            img: todolistImg,
-            description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
-        },
-        {
-            type: "React",
             name: "Messenger",
-            img: "https://miro.medium.com/max/3840/1*yjH3SiDaVWtpBX0g_2q68g.png",
+            img: network,
             description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
         },
         {
             type: "JS",
             name: "Counter",
-            img: counterImg,
+            img: network,
             description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
         },
         {
             type: "JS",
             name: "JS EXAMPLE",
-            img: "https://astwellsoft.com/assets/images/blog/xjavascript.jpg.pagespeed.ic.08u3EZ_AsW.jpg",
+            img: network,
             description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
         },
         {
             type: "React",
             name: "REACT EXAMPLE",
-            img: "https://onextrapixel.com/wp-content/uploads/2016/04/reactjs-thumb.jpg",
+            img: network,
             description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
         },
         {
             type: "JS",
             name: "Counter",
-            img: "https://www.awesomeandrew.ru/wp-content/uploads/2020/02/1566556486_1_js.jpg",
+            img: network,
             description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
         },
     ]

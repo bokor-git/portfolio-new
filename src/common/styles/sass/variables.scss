@@ -1,12 +1,14 @@
 $primaryGradientColor: #26ffe6;
 $secondaryGradientColor: #0075f2;
 
+@font-face {
+  font-family: My-Font;
+  src: url('./../fonts/Raleway-Medium.woff');
+}
 
 $textColor: #8e8e8e;
-$textFont: 'Poppins', sans-serif;
-$textFont2:  'Raleway', sans-serif;
+$textFont2:  My-Font, sans-serif;
 $backgroundImgGradient: linear-gradient(45deg, $primaryGradientColor 15%, $secondaryGradientColor 65%);
-$mainTitleFont: "Gilroy", sans-serif;
 $titleColor: #2f323a;
 
 

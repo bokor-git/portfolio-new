@@ -10,7 +10,7 @@ import Zoom from 'react-reveal/Zoom';
 import {ProjectType} from "../App";
 
 
-const Projects = ({projects}: { projects: Array<ProjectType> }) => {
+const Projects = React.memo(({projects}: { projects: Array<ProjectType> }) => {
 
     const [allProjects, setAllProjects] = useState<Array<ProjectType>>(projects)
     const [filteredProjects, setFilteredProjects] = useState<Array<ProjectType>>(allProjects)
@@ -38,6 +38,7 @@ const Projects = ({projects}: { projects: Array<ProjectType> }) => {
     }, [selector]);
 
     return <div className={style.projectsBlock}>
+        {console.log(  "Projects1 render")}
         <div className={`${styleContainer.container} ${style.projectContainer}`}>
             <Fade delay={500} duration={1000} distance={"30%"} right>
                 <h2 className={style.title}>PROJECTS</h2>
@@ -81,6 +82,6 @@ const Projects = ({projects}: { projects: Array<ProjectType> }) => {
             </div>
         </div>
     </div>
-}
+})
 
 export default Projects

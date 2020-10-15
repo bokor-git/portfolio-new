@@ -3,10 +3,14 @@ import style from "./Main.module.scss"
 import styleContainer from "../common/styles/Container.module.css"
 import {Link} from 'react-scroll'
 import arrow from  "../common/icons/arrow.svg"
+import {Background} from "../common/background/background";
 
 
 const Main = () => {
     return <div className={style.main}>
+        {console.log(  "Main render")}
+        <div className={style.background}><Background/></div>
+
             <div className={styleContainer.container}>
                 <div className={style.text}>
                     <p className={style.top}>Hello, I'm <span className={style.highlight}>Bohdan Korol</span>. <br/>

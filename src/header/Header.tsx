@@ -5,6 +5,7 @@ import styleContainer from "../common/styles/Container.module.css";
 
 const Header = () =>{
     return <div className={style.header}>
+        {console.log(  "Header render")}
         <div className={styleContainer.container}>
         <Nav/>
         </div>

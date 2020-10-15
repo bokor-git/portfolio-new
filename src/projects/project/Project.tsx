@@ -12,8 +12,9 @@ type ProjectPropsType = {
     img: string
 }
 
-const Project = (props: ProjectPropsType) => {
+const Project = React.memo ((props: ProjectPropsType) => {
     return <div className={`${styleContainer.container} ${style.project}`}>
+        {console.log(  "Project render")}
         <div className={style.projectPhoto}>
             <img src={props.img} alt=""/>
             <div className={style.hover_container}>
@@ -30,7 +31,7 @@ const Project = (props: ProjectPropsType) => {
                 </Fade>
             </div>
         </div>
-    </div>
-};
+    </div>})
+
 
 export default Project
