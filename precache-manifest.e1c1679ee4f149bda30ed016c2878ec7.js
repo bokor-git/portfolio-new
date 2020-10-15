@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46b64d0fabb399b9da9f7137addc7a21",
+    "revision": "a48233ca440bd8500f7f9a1a9e7d6956",
     "url": "/portfolio-new/index.html"
   },
   {
-    "revision": "04d007b087f87f29cddb",
-    "url": "/portfolio-new/static/css/main.0d4ac293.chunk.css"
+    "revision": "2cdc34f29f2acb545b80",
+    "url": "/portfolio-new/static/css/main.f6cdd4fb.chunk.css"
   },
   {
     "revision": "2017cff4bf7c0c922ea4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-new/static/js/2.99c7237f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04d007b087f87f29cddb",
+    "revision": "2cdc34f29f2acb545b80",
     "url": "/portfolio-new/static/js/main.bd280888.chunk.js"
   },
   {
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0f6e082f42f5247d82c3ade9c2a8f928",
     "url": "/portfolio-new/static/media/Gilroy-ExtraBold.0f6e082f.otf"
+  },
+  {
+    "revision": "00ecd83ea6ee3943cf1727e846877bc5",
+    "url": "/portfolio-new/static/media/Raleway-Medium.00ecd83e.woff"
   },
   {
     "revision": "1e8215b5266394137a3a102f3d36418b",
