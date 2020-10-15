@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0c55e62c3bc40fdfd08fc0eceaa1b92",
+    "revision": "46b64d0fabb399b9da9f7137addc7a21",
     "url": "/portfolio-new/index.html"
   },
   {
-    "revision": "863df44c258c4ead0591",
-    "url": "/portfolio-new/static/css/main.eae16875.chunk.css"
+    "revision": "04d007b087f87f29cddb",
+    "url": "/portfolio-new/static/css/main.0d4ac293.chunk.css"
   },
   {
-    "revision": "f8b93d0d468fb59fee32",
-    "url": "/portfolio-new/static/js/2.b023d822.chunk.js"
+    "revision": "2017cff4bf7c0c922ea4",
+    "url": "/portfolio-new/static/js/2.99c7237f.chunk.js"
   },
   {
     "revision": "77e7f328dacc981fca681ee4ae94d669",
-    "url": "/portfolio-new/static/js/2.b023d822.chunk.js.LICENSE.txt"
+    "url": "/portfolio-new/static/js/2.99c7237f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "863df44c258c4ead0591",
-    "url": "/portfolio-new/static/js/main.d358f628.chunk.js"
+    "revision": "04d007b087f87f29cddb",
+    "url": "/portfolio-new/static/js/main.bd280888.chunk.js"
   },
   {
     "revision": "e091338d7d49b6d250b8",
@@ -60,10 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-new/static/media/linkedin-in-brands.7ab05450.svg"
   },
   {
-    "revision": "17ee59c55d6b993b6622eb360522d13c",
-    "url": "/portfolio-new/static/media/me.17ee59c5.webp"
-  },
-  {
     "revision": "ff5cf8f0bdf73e70ac41a9aaae268554",
     "url": "/portfolio-new/static/media/me.ff5cf8f0.png"
   },
@@ -72,19 +68,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-new/static/media/paper.72dc296f.svg"
   },
   {
-    "revision": "6deab98c113244322d9cd00d119917ed",
-    "url": "/portfolio-new/static/media/social-network.6deab98c.png"
-  },
-  {
     "revision": "1e6c58fda7bc7a1fd3772511cbac4d0b",
     "url": "/portfolio-new/static/media/speed.1e6c58fd.svg"
   },
   {
     "revision": "662bdc23a8b82cd5089720e7aa6b1092",
     "url": "/portfolio-new/static/media/telegram.662bdc23.svg"
-  },
-  {
-    "revision": "650d1708b25c2082180a9514a35b8077",
-    "url": "/portfolio-new/static/media/todolist.650d1708.png"
   }
 ]);
