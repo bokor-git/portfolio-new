@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "599cd26511d2cfcbb91069e7b56e662e",
+    "revision": "ec0af334f5429d714616793a9f5c0ebe",
     "url": "/portfolio-new/index.html"
   },
   {
-    "revision": "8927a4e619878356948f",
-    "url": "/portfolio-new/static/css/main.01fd5ca1.chunk.css"
+    "revision": "8457581270180b9fd534",
+    "url": "/portfolio-new/static/css/main.75b6e7c9.chunk.css"
   },
   {
     "revision": "4db3079013b99cb02d14",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-new/static/js/2.ba0434ea.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8927a4e619878356948f",
-    "url": "/portfolio-new/static/js/main.8aa2e21f.chunk.js"
+    "revision": "8457581270180b9fd534",
+    "url": "/portfolio-new/static/js/main.a4bdd2fb.chunk.js"
   },
   {
     "revision": "e091338d7d49b6d250b8",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-new/static/media/linkedin-in-brands.7ab05450.svg"
   },
   {
-    "revision": "36fffbd89bdcf1d39504b2b23bd2b47a",
-    "url": "/portfolio-new/static/media/me3.36fffbd8.png"
+    "revision": "08a78c4522cb0ef9ec995d1888b276fe",
+    "url": "/portfolio-new/static/media/me4.08a78c45.png"
   },
   {
     "revision": "4483e2808a5e7565b35dd78b336e07f9",

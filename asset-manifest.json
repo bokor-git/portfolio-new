@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio-new/static/css/main.01fd5ca1.chunk.css",
-    "main.js": "/portfolio-new/static/js/main.8aa2e21f.chunk.js",
-    "main.js.map": "/portfolio-new/static/js/main.8aa2e21f.chunk.js.map",
+    "main.css": "/portfolio-new/static/css/main.75b6e7c9.chunk.css",
+    "main.js": "/portfolio-new/static/js/main.a4bdd2fb.chunk.js",
+    "main.js.map": "/portfolio-new/static/js/main.a4bdd2fb.chunk.js.map",
     "runtime-main.js": "/portfolio-new/static/js/runtime-main.fff1fd40.js",
     "runtime-main.js.map": "/portfolio-new/static/js/runtime-main.fff1fd40.js.map",
     "static/js/2.ba0434ea.chunk.js": "/portfolio-new/static/js/2.ba0434ea.chunk.js",
     "static/js/2.ba0434ea.chunk.js.map": "/portfolio-new/static/js/2.ba0434ea.chunk.js.map",
     "index.html": "/portfolio-new/index.html",
-    "precache-manifest.d60e5b0aa351e8bf4cba33a8ac03686e.js": "/portfolio-new/precache-manifest.d60e5b0aa351e8bf4cba33a8ac03686e.js",
+    "precache-manifest.16cbb5e79a5f0e8fcdd175ec7775063c.js": "/portfolio-new/precache-manifest.16cbb5e79a5f0e8fcdd175ec7775063c.js",
     "service-worker.js": "/portfolio-new/service-worker.js",
-    "static/css/main.01fd5ca1.chunk.css.map": "/portfolio-new/static/css/main.01fd5ca1.chunk.css.map",
+    "static/css/main.75b6e7c9.chunk.css.map": "/portfolio-new/static/css/main.75b6e7c9.chunk.css.map",
     "static/js/2.ba0434ea.chunk.js.LICENSE.txt": "/portfolio-new/static/js/2.ba0434ea.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/portfolio-new/static/media/Gilroy-ExtraBold.0f6e082f.otf",
     "static/media/LineWhite.module.scss": "/portfolio-new/static/media/Raleway-Medium.00ecd83e.woff",
@@ -21,7 +21,7 @@
     "static/media/gadget.svg": "/portfolio-new/static/media/gadget.b43d86c0.svg",
     "static/media/instagram.svg": "/portfolio-new/static/media/instagram.ae96299c.svg",
     "static/media/linkedin-in-brands.svg": "/portfolio-new/static/media/linkedin-in-brands.7ab05450.svg",
-    "static/media/me3.png": "/portfolio-new/static/media/me3.36fffbd8.png",
+    "static/media/me4.png": "/portfolio-new/static/media/me4.08a78c45.png",
     "static/media/network.png": "/portfolio-new/static/media/network.4483e280.png",
     "static/media/paper.svg": "/portfolio-new/static/media/paper.72dc296f.svg",
     "static/media/speed.svg": "/portfolio-new/static/media/speed.1e6c58fd.svg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.fff1fd40.js",
     "static/js/2.ba0434ea.chunk.js",
-    "static/css/main.01fd5ca1.chunk.css",
-    "static/js/main.8aa2e21f.chunk.js"
+    "static/css/main.75b6e7c9.chunk.css",
+    "static/js/main.a4bdd2fb.chunk.js"
   ]
 }
