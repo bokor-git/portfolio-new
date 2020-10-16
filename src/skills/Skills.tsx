@@ -6,8 +6,7 @@ import {Line} from "../common/components/Line";
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 import {ProgressNew} from "../common/progress-bar/Progress";
-import photo from "../common/img/me.png"
-import photoWebp from "../common/img/me.png"
+import photo from "../common/img/me3.png"
 import {SkillsType, TechnologiesType} from "../App";
 
 
@@ -32,9 +31,13 @@ const Skills =React.memo( ({skills, technologies}: { skills: Array<SkillsType> ,
                         <img src={photo} alt="profile photo" className={style.photo}/>
                         <div className={style.title}>Who's this guy?</div>
                         <div className={style.description}>
-                            <div>I'm a Front-End Developer from Ukraine <br/>
-                                I have serious passion for web development,
-                                animations and creating intuitive, dynamic user interfaces.
+                            <div>
+                                I am ambitious and self-motivated Front-End Developer with сonfident understanding of React-Redux architecture
+                                and technical experience in <b>React/Redux/TypeScript</b>.
+                                <br/>
+                                I have good knowledge in vanilla JavaScript and problem solving skills.
+                                <br/>
+                                I am looking for a great team to work with!
                             </div>
                         </div>
                     </div>

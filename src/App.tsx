@@ -8,8 +8,6 @@ import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 import {Element} from "react-scroll";
 import network from "./common/img/network.png";
-
-import counterImg from "./common/img/counter.png";
 import speed from "../src/common/icons/speed.svg"
 import gadget from "../src/common/icons/gadget.svg"
 import paper from "../src/common/icons/paper.svg"
