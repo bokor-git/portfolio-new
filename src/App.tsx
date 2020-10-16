@@ -94,11 +94,14 @@ function App() {
     const technologies: Array<TechnologiesType> = [
         {done: "90", title: "HTML"},
         {done: "90", title: "CSS"},
+        {done: "90", title: "React"},
         {done: "80", title: "JavaScript"},
-        {done: "80", title: "React"},
-        {done: "70", title: "TypeScript"},
-        {done: "60", title: "Redux"},
+        {done: "75", title: "TypeScript"},
+        {done: "75", title: "Redux"},
+        {done: "70", title: "Axios"},
+        {done: "70", title: "Formik"},
         {done: "60", title: "Jest"},
+        {done: "60", title: "Material-UI"},
         {done: "30", title: "NodeJs"},
     ]
 

@@ -6,14 +6,13 @@ import {Line} from "../common/components/Line";
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 import {ProgressNew} from "../common/progress-bar/Progress";
-import photo from "../common/img/me3.png"
+import photo from "../common/img/me4.png"
 import {SkillsType, TechnologiesType} from "../App";
 
 
 const Skills =React.memo( ({skills, technologies}: { skills: Array<SkillsType> , technologies:Array<TechnologiesType>}) => {
     const [start, setStart] = useState<boolean>(false)
     return <div className={style.skillsBlock}>
-        {console.log(  "Skills render")}
         <div className={`${styleContainer.container} ${style.skillsContainer}`}>
             <Fade fraction={0.6} delay={500} duration={1000} distance={"30%"} left>
                 <h2 className={style.title}>ABOUT</h2>
