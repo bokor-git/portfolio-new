@@ -10,6 +10,7 @@ type ProjectPropsType = {
     name: string
     description: string
     img: string
+    link:string
 }
 
 const Project = React.memo ((props: ProjectPropsType) => {
@@ -26,7 +27,7 @@ const Project = React.memo ((props: ProjectPropsType) => {
                 </Fade>
                 <Fade duration={300} bottom>
                     <div className={style.link_container}>
-                        <CheckLink text={"LEARN MORE"}/>
+                        <CheckLink link={props.link} text={"LEARN MORE"}/>
                     </div>
                 </Fade>
             </div>

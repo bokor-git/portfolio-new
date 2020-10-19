@@ -73,11 +73,11 @@ const Contacts = () => {
                                           onBlur={handleBlur}
                                           value={values.text} placeholder={"Enter your massage..."}
                                           className={style.formMessage}/>
-                                <div className={style.error}> {errors.text && touched.text && errors.text || errors.email && touched.email && errors.email || errors.name && touched.name && errors.name}</div>
+                                <div
+                                    className={style.error}> {errors.text && touched.text && errors.text || errors.email && touched.email && errors.email || errors.name && touched.name && errors.name}</div>
                                 <button type="submit" disabled={false} className={style.sendButton}>Send
                                 </button>
                             </form>
-
                         )}
                     </Formik>
                 </div>

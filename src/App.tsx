@@ -8,6 +8,8 @@ import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 import {Element} from "react-scroll";
 import network from "./common/img/network.png";
+import cards from "./common/img/cards.png";
+import todolist from "./common/img/todolist.png";
 import speed from "../src/common/icons/speed.svg"
 import gadget from "../src/common/icons/gadget.svg"
 import paper from "../src/common/icons/paper.svg"
@@ -19,6 +21,7 @@ export type ProjectType = {
     name: string
     description: string
     img: string
+    link:string
 }
 export type SkillsType = {
     title: string
@@ -32,37 +35,27 @@ export type TechnologiesType = {
 }
 
 function App() {
-
     const projects: Array<ProjectType> = [
         {
             type: "React",
-            name: "Messenger",
+            name: "Social Network",
             img: network,
-            description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
-        },
-        {
-            type: "JS",
-            name: "Counter",
-            img: network,
-            description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
-        },
-        {
-            type: "JS",
-            name: "JS EXAMPLE",
-            img: network,
-            description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
+            description: "REACT/REDUX/TYPESCRIPT",
+            link:"https://bokor-git.github.io/social-network-ts/"
         },
         {
             type: "React",
-            name: "REACT EXAMPLE",
-            img: network,
-            description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
+            name: "Study Cards",
+            img: cards,
+            description: "REACT/REDUX/TYPESCRIPT",
+            link:"https://bokor-git.github.io/study-cards/"
         },
         {
-            type: "JS",
-            name: "Counter",
-            img: network,
-            description: "Accusantium, aliquam aspernatur atque cum fugit molestiae nihil repudiandae"
+            type: "React",
+            name: "Todolist",
+            img: todolist,
+            description: "REACT/REDUX/TYPESCRIPT",
+            link: "http://bokor-git.github.io/todolist"
         },
     ]
     const skills: Array<SkillsType> = [

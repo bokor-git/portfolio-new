@@ -76,7 +76,7 @@ const Projects = React.memo(({projects}: { projects: Array<ProjectType> }) => {
             <div className={style.projectBlock}>
                 {filteredProjects.map(p =>
                     <Zoom  distance={"50%"}>
-                        <Project key={p.img} name={p.name} description={p.description} img={p.img}/>
+                        <Project key={p.img} name={p.name} link={p.link} description={p.description} img={p.img}/>
                     </Zoom>
                 )}
             </div>
