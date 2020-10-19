@@ -8,7 +8,6 @@ import {Background} from "../common/background/background";
 
 const Main = () => {
     return <div className={style.main}>
-        {console.log(  "Main render")}
         <div className={style.background}><Background/></div>
 
             <div className={styleContainer.container}>

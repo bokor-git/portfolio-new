@@ -6,14 +6,12 @@ import {Formik} from "formik";
 // @ts-ignore
 import Fade from "react-reveal/Fade";
 // @ts-ignore
-import Pulse from 'react-reveal/Pulse';
-// @ts-ignore
 import Zoom from 'react-reveal/Zoom';
 import contact from  "../common/icons/contact.svg"
+import {contactFormAPI} from "../api/contacts-form";
 
 const Contacts = () => {
     return <div className={style.contactsBlock}>
-        {console.log(  "Contacts render")}
         <img src={contact} alt=""/>
         <div className={`${styleContainer.container} ${style.contactsContainer}`}>
             <Fade delay={500} duration={1000} distance={"30%"} left>
@@ -30,11 +28,7 @@ const Contacts = () => {
                     <Formik
                         initialValues={{name: '', email: '', text: ""}}
                         onSubmit={(values, {setSubmitting}) => {
-                            setTimeout(() => {
-                                alert(JSON.stringify(values, null, 2));
-                                setSubmitting(false);
-                            }, 400);
-                        }}
+                            contactFormAPI.postInfo(values.name,values.email,values.text).then(res=>console.log(res))}}
                         validate={values => {
                             let errors: { name?: string, email?: string, text?: string } = {};
                             if (!values.name) {
