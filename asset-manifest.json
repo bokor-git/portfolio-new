@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio-new/static/css/main.d857417c.chunk.css",
-    "main.js": "/portfolio-new/static/js/main.0b1b96f5.chunk.js",
-    "main.js.map": "/portfolio-new/static/js/main.0b1b96f5.chunk.js.map",
+    "main.js": "/portfolio-new/static/js/main.d347f24c.chunk.js",
+    "main.js.map": "/portfolio-new/static/js/main.d347f24c.chunk.js.map",
     "runtime-main.js": "/portfolio-new/static/js/runtime-main.fff1fd40.js",
     "runtime-main.js.map": "/portfolio-new/static/js/runtime-main.fff1fd40.js.map",
-    "static/js/2.6a180e34.chunk.js": "/portfolio-new/static/js/2.6a180e34.chunk.js",
-    "static/js/2.6a180e34.chunk.js.map": "/portfolio-new/static/js/2.6a180e34.chunk.js.map",
+    "static/js/2.fecbe649.chunk.js": "/portfolio-new/static/js/2.fecbe649.chunk.js",
+    "static/js/2.fecbe649.chunk.js.map": "/portfolio-new/static/js/2.fecbe649.chunk.js.map",
     "index.html": "/portfolio-new/index.html",
-    "precache-manifest.7154fe4933e6d26605a4789000514ce2.js": "/portfolio-new/precache-manifest.7154fe4933e6d26605a4789000514ce2.js",
+    "precache-manifest.7bfa9b0c242e232beaf772d58c8789e4.js": "/portfolio-new/precache-manifest.7bfa9b0c242e232beaf772d58c8789e4.js",
     "service-worker.js": "/portfolio-new/service-worker.js",
     "static/css/main.d857417c.chunk.css.map": "/portfolio-new/static/css/main.d857417c.chunk.css.map",
-    "static/js/2.6a180e34.chunk.js.LICENSE.txt": "/portfolio-new/static/js/2.6a180e34.chunk.js.LICENSE.txt",
+    "static/js/2.fecbe649.chunk.js.LICENSE.txt": "/portfolio-new/static/js/2.fecbe649.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/portfolio-new/static/media/Gilroy-ExtraBold.0f6e082f.otf",
     "static/media/LineWhite.module.scss": "/portfolio-new/static/media/Raleway-Medium.00ecd83e.woff",
     "static/media/arrow.svg": "/portfolio-new/static/media/arrow.1e8215b5.svg",
     "static/media/atom.svg": "/portfolio-new/static/media/atom.2f3bcde1.svg",
     "static/media/cards.png": "/portfolio-new/static/media/cards.ea32d940.png",
+    "static/media/chat.png": "/portfolio-new/static/media/chat.4ef16c68.png",
     "static/media/contact.svg": "/portfolio-new/static/media/contact.917a3bbe.svg",
     "static/media/facebook-logo.svg": "/portfolio-new/static/media/facebook-logo.1ce38dd2.svg",
     "static/media/gadget.svg": "/portfolio-new/static/media/gadget.b43d86c0.svg",
@@ -31,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fff1fd40.js",
-    "static/js/2.6a180e34.chunk.js",
+    "static/js/2.fecbe649.chunk.js",
     "static/css/main.d857417c.chunk.css",
-    "static/js/main.0b1b96f5.chunk.js"
+    "static/js/main.d347f24c.chunk.js"
   ]
 }
